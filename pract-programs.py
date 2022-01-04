@@ -33,15 +33,25 @@ def search():
     # WRITE CODE FROM HERE    
     lt = eval(input("Enter a list or tuple : "))
     sr = input("Search element : ")
-    indexes = []
-    for i in range(len(lt)):
-        if str(lt[i]) == sr:
-            indexes.append(i)
+    indexes = [i for i in range(len(lt)) if str(lt[i]) == sr]
     return print("The element", sr, "has indexes", indexes)
 
 # 4. Input a list of numbers and test if a number is equal to the 
 #    sum of the cubes of its digits. Find the smallest and largest 
 #    such number from the given list of numbers.
+def l_arms():
+    
+    # WRITE CODE FROM HERE
+    l = list(eval(input("Enter the elements : ")))
+    l_arms = []
+    for i in l:
+        arm = sum(int(j)**3 for j in str(i))
+        if arm == i:
+            l_arms.append(i)
+
+    print(l_arms)
+    print("Max :", max(l_arms), "; Min :", min(l_arms))
+
 
 # 5. Create a list which will display the sqare of the number from
 #    0 to 10
