@@ -130,3 +130,14 @@ def count_occur():
     return print("The word", chk, "occurs in the string", s.count(chk), "times.")
 
 # 12. Check whether two keys in a dictionary have same values
+def same_def():
+    
+    # WRITE CODE FROM HERE
+     d = {1: [1, 2, 3, 4], 2: 'Apple', 3: (1, 5, 2), 4: 'Orange', \
+         5: 'Apple', 6: [1, 2, 3, 4]}
+     for i in d:
+        for j in range(i+1, len(d), +1):
+            if d[i] == d[j]:
+                print(d[i], "-> Original : ", i, " | Repeat : ", j)
+            else:
+                pass
