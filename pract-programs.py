@@ -15,7 +15,7 @@ def max_min():
 # 2. Input a list of numbers and swap elements at the even locations
 #    with the elements at the odd location.
 def eo_swap():
-    
+   
     # WRITE CODE FROM HERE    
     l = list(eval(input("Enter a list with numbers : ")))
     eo = []
@@ -62,6 +62,7 @@ def sqto10():
 
 # 6. Show the first letter of each word in a list
 def first_letter():
+    
     # WRITE CODE FROM HERE
     string = input("Enter a string : ").split(' ')
     return [x[0] for x in string]
@@ -104,8 +105,8 @@ def differ():
 #    students in a class and display the names of the marks who have
 #     marks above 7
 def above75(d=dict):
-    # WRITE CODE FROM HERE
     
+    # WRITE CODE FROM HERE
     cl = {'roll':[1, 2, 3, 4, 5], 'name':['Name1', 'Name2', 'Name3', 'Name4', 'Name5'],\
     'marks':[82, 75, 60, 90, 92]}
     for i in range(0, len(d['marks']), +1):
