@@ -7,7 +7,7 @@ def max_min():
     typ = "list" if type(lt) == list else "tuple"
     if mm == "1":
         return print("Maximum value of", typ, "is", max(lt))
-    elif mm == 2:
+    elif mm == "2":
         return print("Maximum value of", typ, "is", min(lt))
     else:
         return print("Invalid Operation")
@@ -21,7 +21,7 @@ Maximum value of list is -500.0
 # 2. Input a list of numbers and swap elements at the even locations
 #    with the elements at the odd location.
 def eo_swap():
-    
+   
     # WRITE CODE FROM HERE    
     l = list(eval(input("Enter a list with numbers : ")))
     eo = []
@@ -88,6 +88,7 @@ OUTPUT:
 
 # 6. Show the first letter of each word in a list
 def first_letter():
+    
     # WRITE CODE FROM HERE
     string = input("Enter a string : ").split(' ')
     return [x[0] for x in string]
@@ -146,8 +147,13 @@ Differing point index : 4
 # 9. Create a dictionay with the roll number, name, marks of n 
 #    students in a class and display the names of the marks who have
 #     marks above 7
+<<<<<<< HEAD
 def above75():
 
+=======
+def above75(d=dict):
+    
+>>>>>>> 5b875da33c32a17886c3890d151a4fac3a314be6
     # WRITE CODE FROM HERE
     cl = {'roll':[1, 2, 3, 4, 5], 'name':['Name1', 'Name2', 'Name3', 'Name4', 'Name5'],\
     'marks':[82, 75, 60, 90, 92]}
@@ -217,7 +223,10 @@ def same_def():
                 print(d[i], "-> Original : ", i, " | Repeat : ", j)
             else:
                 pass
+<<<<<<< HEAD
 '''
 OUTPUT:
 Apple -> Original :  2  | Repeat :  5
 '''
+=======
+>>>>>>> 5b875da33c32a17886c3890d151a4fac3a314be6
