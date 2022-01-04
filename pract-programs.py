@@ -1,4 +1,4 @@
-# pick max or min value in a list or tuple
+# 1. Find the largest/smallest number in a list/tuple
 def max_min():
     
     # WRITE CODE FROM HERE    
@@ -12,7 +12,8 @@ def max_min():
     else:
         return print("Invalid Operation")
 
-# swap values in even positions with those in odd positions
+# 2. Input a list of numbers and swap elements at the even locations
+#    with the elements at the odd location.
 def eo_swap():
     
     # WRITE CODE FROM HERE    
@@ -25,7 +26,8 @@ def eo_swap():
             eo.extend([l[i+1], l[i]])
     return eo
 
-# search a string for a specific word and return its index
+# 3.  Input a list/tuple of elements, search for a given element
+#     in the list/tuple
 def search():
     
     # WRITE CODE FROM HERE    
@@ -37,19 +39,25 @@ def search():
             indexes.append(i)
     return print("The element", sr, "has indexes", indexes)
 
-# print the squares of numbers from 1 to 10
+# 4. Input a list of numbers and test if a number is equal to the 
+#    sum of the cubes of its digits. Find the smallest and largest 
+#    such number from the given list of numbers.
+
+# 5. Create a list which will display the sqare of the number from
+#    0 to 10
 def sqto10():
     
     # WRITE CODE FROM HERE
     return [x**2 for x in range(11)]
 
-# return the first letter of each word in a string
+# 6. Show the first letter of each word in a list
 def first_letter():
     # WRITE CODE FROM HERE
     string = input("Enter a string : ").split(' ')
     return [x[0] for x in string]
 
-# Push the duplicate elements in a list to the very end
+# 7. Write a program to move all duplicate values in a list to 
+#    the end of the list
 def punish():
     
     # WRITE CODE FROM HERE
@@ -69,7 +77,8 @@ def punish():
                 ln.extend([k])
     return ln
 
-# Return the indexes of the places where two similar lists differ
+# 8.  Write a program to compare two equal sized lists and print the
+#     index where they differ
 def differ():
     
     # WRITE CODE FROM HERE
@@ -81,7 +90,9 @@ def differ():
             if l1[i] != l2[i]:
                 print("Differing point index :", i)
 
-# Print name of student getting above 75
+# 9. Create a dictionay with the roll number, name, marks of n 
+#    students in a class and display the names of the marks who have
+#     marks above 7
 def above75(d=dict):
     # WRITE CODE FROM HERE
     
@@ -91,7 +102,7 @@ def above75(d=dict):
         if d['marks'][i] > 75:
             print(d['name'[i]])
 
-# compare two dictionaries and check if they are similar or not
+# 10. Check whether a Dictionary is present in another dictionary
 def chk_d(dict1, dict2):
     
     # WRITE CODE FROM HERE
@@ -110,10 +121,12 @@ def chk_d(dict1, dict2):
         else:
             return print("The two dictionaries are dissimilar")
         
-# count the number of times a word occurs in a string
+# 11. Count the number of occurances of words in a sentence
 def count_occur():
     
     # WRITE CODE FROM HERE
     s = input("Enter a string : ").lower()
     chk = input("Word count of which word : ").lower()
     return print("The word", chk, "occurs in the string", s.count(chk), "times.")
+
+# 12. Check whether two keys in a dictionary have same values
