@@ -7,7 +7,7 @@ def max_min():
     typ = "list" if type(lt) == list else "tuple"
     if mm == "1":
         return print("Maximum value of", typ, "is", max(lt))
-    elif mm == 2:
+    elif mm == "2":
         return print("Maximum value of", typ, "is", min(lt))
     else:
         return print("Invalid Operation")
