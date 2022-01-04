@@ -146,14 +146,9 @@ Differing point index : 4
 
 # 9. Create a dictionay with the roll number, name, marks of n 
 #    students in a class and display the names of the marks who have
-#     marks above 7
-<<<<<<< HEAD
+#     marks above 75
 def above75():
-
-=======
-def above75(d=dict):
     
->>>>>>> 5b875da33c32a17886c3890d151a4fac3a314be6
     # WRITE CODE FROM HERE
     cl = {'roll':[1, 2, 3, 4, 5], 'name':['Name1', 'Name2', 'Name3', 'Name4', 'Name5'],\
     'marks':[82, 75, 60, 90, 92]}
@@ -223,10 +218,7 @@ def same_def():
                 print(d[i], "-> Original : ", i, " | Repeat : ", j)
             else:
                 pass
-<<<<<<< HEAD
 '''
 OUTPUT:
 Apple -> Original :  2  | Repeat :  5
 '''
-=======
->>>>>>> 5b875da33c32a17886c3890d151a4fac3a314be6
